@@ -51,20 +51,17 @@
 Склонируйте репозиторий:
 
 ```bash
-Копировать код
 git clone https://github.com/your-username/artist-registry-generator.git
 ```
 
 ## Перейдите в директорию проекта:
 
 ```bash
-Копировать код
 cd artist-registry-generator
 ```
 ## Сборка и запуск приложения:
 
 ```bash
-Копировать код
 mvn clean install
 mvn exec:java -Dexec.mainClass="lesson110.ArtistRegistryService"
 ```
@@ -79,14 +76,12 @@ mvn exec:java -Dexec.mainClass="lesson110.ArtistRegistryService"
 Приложение покрыто тестами, которые можно запустить с помощью Maven:
 
 ```bash
-Копировать код
 mvn test
 ```
 ## Пример структуры выходного файла
 Пример структуры выходного файла в формате XML:
 
 ```xml
-Копировать код
 <ArtistRegistry countryCount="3">
    <Country name="USA">
       <Artist>
