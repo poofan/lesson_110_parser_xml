@@ -63,7 +63,7 @@ cd [ваш путь к проекту, куда вы сделали git clone + 
 
 ```bash
 mvn clean install
-mvn exec:java -Dexec.mainClass="lesson110.ArtistRegistryService"
+mvn spring-boot:run
 ```
 ## Использование
 После запуска приложения в директории src/main/resources/output будут созданы три файла с результатами:
