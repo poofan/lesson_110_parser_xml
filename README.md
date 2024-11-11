@@ -51,13 +51,13 @@
 Склонируйте репозиторий:
 
 ```bash
-git clone https://github.com/your-username/artist-registry-generator.git
+git clone https://github.com/poofan/lesson_110_parser_xml.git
 ```
 
 ## Перейдите в директорию проекта:
 
 ```bash
-cd artist-registry-generator
+cd [ваш путь к проекту, куда вы сделали git clone]
 ```
 ## Сборка и запуск приложения:
 
