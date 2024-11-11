@@ -1,25 +1,42 @@
 package lesson110.output;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
 /**
  * Класс для хранения данных по странам.
  */
-public class Registry
+@JacksonXmlRootElement(localName = "ArtistRegistry")
+public class Registry implements Serializable
 {
-	int size;
+	private static final long serialVersionUID = -6642367748407398903L;
+	
+	@JacksonXmlProperty(isAttribute = true, localName = "countryCount")	
+	int countryCount;
+	
+	@JacksonXmlElementWrapper(useWrapping = false)
+    @JacksonXmlProperty(localName = "Country")
 	private List<Country> countries = new ArrayList<>();
 
-	public Registry(int size, List<Country> countries)
+	public Registry()
 	{
-		this.size = size;
+		
+	}
+
+	public Registry(int countryCount, List<Country> countries)
+	{
+		this.countryCount = countryCount;
 		this.countries = countries;
 	}
 
-	public int getSize()
+	public int getCountryCount()
 	{
-		return size;
+		return countryCount;
 	}
 
 	public List<Country> getCountries()
