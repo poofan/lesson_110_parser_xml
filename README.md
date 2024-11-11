@@ -51,19 +51,19 @@
 Склонируйте репозиторий:
 
 ```bash
-git clone https://github.com/your-username/artist-registry-generator.git
+git clone https://github.com/poofan/lesson_110_parser_xml.git
 ```
 
 ## Перейдите в директорию проекта:
 
 ```bash
-cd artist-registry-generator
+cd [ваш путь к проекту, куда вы сделали git clone + \lesson_110_parser_xml\parser]
 ```
 ## Сборка и запуск приложения:
 
 ```bash
 mvn clean install
-mvn exec:java -Dexec.mainClass="lesson110.ArtistRegistryService"
+mvn spring-boot:run
 ```
 ## Использование
 После запуска приложения в директории src/main/resources/output будут созданы три файла с результатами:
