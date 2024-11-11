@@ -57,7 +57,7 @@ git clone https://github.com/poofan/lesson_110_parser_xml.git
 ## Перейдите в директорию проекта:
 
 ```bash
-cd [ваш путь к проекту, куда вы сделали git clone]
+cd [ваш путь к проекту, куда вы сделали git clone + \lesson_110_parser_xml\parser]
 ```
 ## Сборка и запуск приложения:
 
